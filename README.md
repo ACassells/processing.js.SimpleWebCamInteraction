@@ -3,7 +3,7 @@ processing.js.SimpleWebCamInteraction
 
 Example of using the webcam with processing.js
 
-These are some examples that allow you to use webcam data in a processing sketch. Requires a browser that supports webRTC getUserMedia (I have only got it really working in chrome).
+These are some examples that allow you to use webcam data in a processing sketch. Requires a browser that supports webRTC getUserMedia.  I have now got it working in the latest versions of Chrome, Android and Opera.  For info on what browsers support getUserMedia see http://caniuse.com/stream .
 
 SimpleWebcamInteraction simply renders the input from a webcam in a processing sketch.
 
