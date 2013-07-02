@@ -4,11 +4,14 @@ final int cameraWidth = 960;
 final int cameraHeight = 640;
 
 void setup() { 
-    size(cameraWidth,cameraHeight);
+    size(960,640);
     ctx = externals.context;    
 }
 
-void draw() {
+void draw() { 
+    
+    if (!video.available) return;
+   
     pushMatrix();
     translate(width,0);
     scale(-1,1);//mirror the video so that it looks like me looing back at me (not just a raw video feed)

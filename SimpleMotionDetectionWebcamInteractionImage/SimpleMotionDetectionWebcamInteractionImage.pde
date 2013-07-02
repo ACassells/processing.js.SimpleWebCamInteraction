@@ -9,12 +9,13 @@ final float colorChangeThreshold = 50.0;  // again arbitary, the "amount" of col
 
 
 void setup() { 
-    size(cameraWidth,cameraHeight);
+    size(960,640);
     ctx = externals.context;    
 }
 
 void draw() {
-  
+    if (!video.available) return;
+    
     // I want 2 images in memory, the current and previous image and the differences between these two things is motion!
     previousImage = currentImage;  
     
